@@ -11,22 +11,29 @@ class FacturasTest {
 	@Test
 	public void agregarFacturas() {
 		
-		Facturas art1 = new Facturas (5,2.0,false);
-		Facturas art2 = new Facturas (1,3.0,false);
-		Facturas art3 = new Facturas (1,5.0,true);
-		Facturas art4 = new Facturas (2,3.0,true);
+		Facturas fact1 = new Facturas();
 		
-		Facturas lista = new Facturas();
+		Facturas art1 = new Facturas(5, 5.0, false);
+		Facturas art2 = new Facturas(5, 5.0, false);
+
+		fact1.agregarArticulo(art1);
+		fact1.agregarArticulo(art2);
 		
-		lista.agregarArticulo(art1);
-		lista.agregarArticulo(art2);
-		lista.agregarArticulo(art3);
-		lista.agregarArticulo(art4);
+		fact1.calcularTotalDeLaFactura();
+	}	
+		@Test
+		public void agregarFacturas2() {
+		Facturas fact2 = new Facturas();
 		
-		lista.calcularTotalDeLaFactura();
+		Facturas art3 = new Facturas(2, 5.0, false);
+		Facturas art4 = new Facturas(2, 5.0, false);
+
+		fact2.agregarArticulo(art3);
+		fact2.agregarArticulo(art4);
 		
-		
+		fact2.calcularTotalDeLaFactura();
 		
 	}
+
 
 }
