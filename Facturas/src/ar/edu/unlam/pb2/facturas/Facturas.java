@@ -29,7 +29,8 @@ public class Facturas implements InterfaceFacturas {
 		} else {
 			precioTotalPorArticulo = precioTotalPorArticulo + (precioTotalPorArticulo * IMPUESTOBEBIDAYPERFUME);
 		}
-		System.out.println(precioTotalPorArticulo);
+		System.out.println("La cantidad es de: " + cantidad + " y el precio por articulos es de: " + precio);
+		System.out.println("El precio total de este articulo es de: " + precioTotalPorArticulo);
 		return precioTotalPorArticulo;
 	}
 	
