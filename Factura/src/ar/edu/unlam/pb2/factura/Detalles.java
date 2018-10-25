@@ -1,14 +1,8 @@
 package ar.edu.unlam.pb2.factura;
 
-import java.util.LinkedList;
-import java.util.List;
-
-
 
 public class Detalles extends Factura {
 	
-	 Factura detalles;
-	 
 	 
 	public Detalles() {
 		
@@ -25,9 +19,7 @@ public class Detalles extends Factura {
 	
 	
 
-	public static List<Factura> getListaDeArticulos() {
-		return listaDeArticulos;
-	}
+	
 
 	
 	}

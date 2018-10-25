@@ -16,22 +16,8 @@ public class Factura implements Metodos {
 
 	 
 	public Factura () {}
+		
 	
-
-	public Double getIMPUESTOGENERAL() {
-		return IMPUESTOGENERAL;
-	}
-
-	public Double getIMPUESTODELUJO() {
-		return IMPUESTODELUJO;
-	}
-
-
-	public Double getPrecioTotal() {
-		return precioTotal;
-	}
-
-
 	public Double getCantidad() {
 		return cantidad;
 	}
@@ -55,7 +41,6 @@ public class Factura implements Metodos {
 		
 	}
 
-
 	@Override
 	public Double calcularPrecioTotal() {
 		
@@ -67,5 +52,7 @@ public class Factura implements Metodos {
 
 	public void imprimir() {}
 	
-			
+	public static List<Factura> getListaDeArticulos() {
+		return listaDeArticulos;
+	}
 }
